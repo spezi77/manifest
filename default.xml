@@ -37,7 +37,7 @@
 
   <project path="manifest" name="AOSPA-legacy/manifest" remote="github" revision="kitkat" />
 
-  <project path="build" name="AOSPA-legacy/android_build" remote="github" revision="kitkat" >
+  <project path="build" name="android_build" remote="spz" revision="pa-kitkat" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
