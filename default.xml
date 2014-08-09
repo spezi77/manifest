@@ -12,6 +12,10 @@
   <remote  name="spz"
            fetch="git://github.com/spezi77/" />
 
+  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />
+
   <remote  name="legacy-blobs"
            fetch="https://github.com/ThankYouLuigi" />
 
@@ -352,7 +356,6 @@
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/ParanoidOTA" name="AOSPA-legacy/android_packages_apps_ParanoidOTA" remote="github" revision="kitkat" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
@@ -474,8 +477,14 @@
   <project path="hardware/qcom/display-legacy" name="Evervolv/android_hardware_qcom_display-legacy" remote="github" revision="refs/heads/kitkat" />
   <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" remote="github" revision="refs/heads/kitkat" />  
 
-  <!-- Use htc bravo compatible apps from Evervolv -->
+  <!-- Required for enabling A2SD scripts -->
+  <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" revision="refs/heads/cm-11.0" />
+  <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" remote="github" revision="refs/heads/cm-11.0" />
+
+  <!-- Add htc bravo compatible apps -->
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="github" revision="refs/heads/kitkat" /> 
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omnirom" revision="android-4.4" />
+  <project path="packages/apps/OmniTorch" name="android_packages_apps_OmniTorch" remote="omnirom" revision="android-4.4" />
 
   <!-- Use forked projects with required changes for bravo, e.g. HCW_BLIT, RIL fix, Legacy-USB Tethering, Trackball wake, etc. -->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="spz" revision="refs/heads/cm-11.0" />
