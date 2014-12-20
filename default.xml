@@ -520,7 +520,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- Device specific projects -->
-  <project path="manifest" name="spezi77/manifest" remote="github" revision="pa-lp" />
+  <project path="manifest" name="spezi77/paranoid" remote="github" revision="lollipop" />
   <project path="build" name="spezi77/android_build" remote="github" revision="pa-lp" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
