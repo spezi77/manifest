@@ -22,11 +22,6 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="manifest" name="AOSPA-legacy/manifest" remote="github" revision="lollipop" />
-  <project path="build" name="AOSPA-legacy/android_build" remote="github" revision="lollipop" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="bionic" name="AOSPA-legacy/android_bionic" remote="github" revision="lollipop" groups="pdk" />
@@ -302,7 +297,6 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" remote="cm" revision="cm-12.0" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" remote="cm" revision="cm-12.0" groups="pdk-cw-fs" />
@@ -320,7 +314,6 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="AOSPA-legacy/android_frameworks_opt_telephony" remote="github" revision="lollipop" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -350,7 +343,6 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="cm" revision="cm-12.0" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" revision="cm-12.0" />
@@ -362,7 +354,6 @@
   <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.0-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.0-caf-8226" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" groups="qcom,qcom_display" remote="cm" revision="cm-12.0-caf-8974" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="cm" revision="cm-12.0" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="cm" groups="qcom" revision="cm-12.0" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-12.0" />
   <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-12.0-caf-8960" />
@@ -528,8 +519,28 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="vendor/pa" name="AOSPA-legacy/android_vendor_pa" remote="github" revision="lollipop" >
+  <!-- Device specific projects -->
+  <project path="manifest" name="spezi77/manifest" remote="github" revision="pa-lp" />
+  <project path="build" name="spezi77/android_build" remote="github" revision="pa-lp" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <!-- Use forked devicetrees, vendor and kernel -->
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="pa-lp" />
+  <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common" remote="github" revision="pa-lp" />
+  <project path="kernel/htc/qsd8k" name="spezi77/android_kernel_htc_qsd8k" remote="github" revision="utopian-lp5.0" />
+  <project path="vendor/htc" name="spezi77/android_vendor_htc" remote="github" revision="lp5.0" />
+  <project path="vendor/pa" name="spezi77/android_vendor_pa" remote="github" revision="pa-lp" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
+  
+  <!-- Use projects with added legacy code -->
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="pa-lp" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
+  <project path="hardware/qcom/display-legacy" name="spezi77/android_hardware_qcom_display-legacy" remote="github" revision="lp5.0" />
+  <project path="hardware/qcom/media-legacy" name="spezi77/android_hardware_qcom_media-legacy" remote="github" revision="lp5.0" />
+  <project path="hardware/qcom/audio-caf" name="Evervolv/android_hardware_qcom_audio-caf" remote="github" revision="lollipop-8960" />
+  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" remote="github" revision="lollipop" />
 
 </manifest>
