@@ -523,6 +523,7 @@
   <project path="build" name="spezi77/android_build" remote="github" revision="pa-lp" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="lollipop" />
 
   <!-- Use my own vendor projects -->
   <project path="vendor/htc" name="spezi77/android_vendor_htc" remote="github" revision="lollipop" />
