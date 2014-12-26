@@ -23,7 +23,6 @@
            sync-j="4" />
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="bionic" name="AOSPA-legacy/android_bionic" remote="github" revision="lollipop" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="cm-12.0" groups="pdk" />
@@ -528,19 +527,15 @@
   <!-- Use forked devicetrees, vendor and kernel -->
   <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="pa-lp" />
   <project path="device/htc/qsd8k-common" name="spezi77/android_device_htc_qsd8k-common" remote="github" revision="pa-lp" />
-  <project path="kernel/htc/qsd8k" name="spezi77/android_kernel_htc_qsd8k" remote="github" revision="utopian-lp5.0" />
   <project path="vendor/htc" name="spezi77/android_vendor_htc" remote="github" revision="lp5.0" />
   <project path="vendor/pa" name="spezi77/android_vendor_pa" remote="github" revision="pa-lp" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
   
   <!-- Use projects with added legacy code -->
+  <project path="art" name="spezi77/android_art" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="pa-lp" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
-  <project path="hardware/qcom/display-legacy" name="spezi77/android_hardware_qcom_display-legacy" remote="github" revision="lp5.0" />
-  <project path="hardware/qcom/media-legacy" name="spezi77/android_hardware_qcom_media-legacy" remote="github" revision="lp5.0" />
-  <project path="hardware/qcom/audio-caf" name="Evervolv/android_hardware_qcom_audio-caf" remote="github" revision="lollipop-8960" />
-  <project path="hardware/qcom/gps-legacy" name="Evervolv/android_hardware_qcom_gps-legacy" remote="github" revision="lollipop" />
 
 </manifest>
