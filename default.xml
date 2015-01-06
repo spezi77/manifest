@@ -534,7 +534,7 @@
   <!-- Use projects with added legacy code -->
   <project path="art" name="spezi77/android_art" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="frameworks/av" name="spezi77/android_frameworks_av" remote="github" revision="cm-12.0" groups="pdk" />
-  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="cm-12.0" groups="pdk" />
+  <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="pa-lp" groups="pdk" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="pa-lp" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
   
