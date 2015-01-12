@@ -25,7 +25,6 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" name="AOSPA-legacy/android_bionic" remote="github" revision="lollipop" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -541,5 +540,14 @@
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.0" /> 
 
   <project path="frameworks/base" name="AOSPA-legacy/android_frameworks_base" remote="github" revision="lollipop" groups="pdk-cw-fs" />
+  
+  <!-- Philz tcwm -->
+  <!--<project path="bootable/recovery" name="PhilZ-cwm6/philz_touch_cwm6" remote="github" revision="cm-12.0" />-->
+    
+  <!-- CWM -->
+  <!--<project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" revision="cm-12.0" />-->
+  
+  <!-- TWRP by TeamWin -->
+  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.0" />
 
 </manifest>
