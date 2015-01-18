@@ -537,6 +537,9 @@
   <project path="hardware/libhardware_legacy" name="spezi77/android_hardware_libhardware_legacy" remote="github" revision="cm-12.0" />
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />
   
+  <!-- Embedded SU -->
+  <project path="external/su" name="Evervolv/android_external_su" remote="github" revision="lollipop" />
+  
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.0" /> 
 
   <project path="frameworks/base" name="AOSPA-legacy/android_frameworks_base" remote="github" revision="lollipop" groups="pdk-cw-fs" />
