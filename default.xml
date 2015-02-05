@@ -532,8 +532,7 @@
   <!-- Koush Superuser -->
   <project path="external/koush/Superuser" name="SlimRoms/Superuser" remote="github" revision="lp5.0" />
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-12.0" />
-  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" remote="github" revision="pa-lp"  />
-
+  
   <!-- Forked from AOSPA-legacy -->
   <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="pa-lp" groups="pdk-cw-fs" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="pa-lp" groups="pdk" />
@@ -553,4 +552,8 @@
   <project path="bootable/recovery" name="Evervolv/android_bootable_recovery" remote="github" revision="lollipop" />
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="github" revision="lollipop" />
   
+  <!-- Add my own Toolbox into Settings -->
+  <project path="packages/apps/Toolbox" name="spezi77/android_packages_apps_Toolbox" remote="github" revision="lollipop" />
+  <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" remote="github" revision="pa-lp"  />
+
 </manifest>
