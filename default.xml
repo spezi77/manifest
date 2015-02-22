@@ -515,7 +515,8 @@
   <project path="hardware/ril" name="spezi77/android_hardware_ril" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="bionic" name="spezi77/bionic" remote="github" revision="lollipop" groups="pdk" />
-  
+  <project path="bootable/recovery" name="spezi77/android_bootable_recovery" remote="github" revision="pa-lp" />
+
   <!-- Koush Superuser -->
   <project path="external/koush/Superuser" name="spezi77/Superuser" remote="github" revision="pa-lp" />
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-12.0" />
@@ -533,7 +534,6 @@
   <!-- Evervolv -->
   <project path="device/qcom/sepolicy" name="Evervolv/android_device_qcom_sepolicy" remote="github" revision="lollipop" />
   <project path="external/sepolicy" name="Evervolv/android_external_sepolicy" remote="github" revision="lollipop" />
-  <project path="bootable/recovery" name="Evervolv/android_bootable_recovery" remote="github" revision="lollipop" />
   <project path="packages/apps/Camera2" name="Evervolv/android_packages_apps_Camera2" remote="github" revision="lollipop" />
   
   <!-- Add my own Toolbox into Settings -->
