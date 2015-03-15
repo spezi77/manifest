@@ -503,7 +503,7 @@
 
   <!-- Device specific projects -->
   <project path="manifest" name="spezi77/paranoid" remote="github" revision="lollipop" />
-  <project path="build" name="spezi77/android_build" remote="github" revision="pa-lp" >
+  <project path="build" name="spezi77/android_build" remote="github" revision="pa-lp-mr1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/htc/bravo" name="spezi77/android_device_htc_bravo" remote="github" revision="lollipop" />
@@ -529,15 +529,17 @@
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-12.0" />
   
   <!-- Forked from AOSPA-legacy -->
-  <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="pa-lp" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="spezi77/android_frameworks_base" remote="github" revision="pa-lp-mr1" groups="pdk-cw-fs" />
   <project path="frameworks/native" name="spezi77/android_frameworks_native" remote="github" revision="pa-lp" groups="pdk" />
   <project path="frameworks/opt/telephony" name="spezi77/android_frameworks_opt_telephony" remote="github" revision="pa-lp" groups="pdk" />
-  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="pa-lp" groups="pdk" />
+  <project path="system/core" name="spezi77/android_system_core" remote="github" revision="pa-lp-mr1" groups="pdk" />
 
   <!-- CyanogenMod -->
-  <project path="external/skia" name="CyanogenMod/android_external_skia" remote="github" revision="cm-12.0" groups="pdk-cw-fs,qcom_msm8x26" />
+  <!--<project path="external/skia" name="CyanogenMod/android_external_skia" remote="github" revision="cm-12.0" groups="pdk-cw-fs,qcom_msm8x26" />-->
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.0" />
-  
+
+  <project path="external/skia" name="AOSPA-legacy/android_external_skia" remote="github" revision="lollipop-mr1" />
+
   <!-- Evervolv -->
   <project path="device/qcom/sepolicy" name="Evervolv/android_device_qcom_sepolicy" remote="github" revision="lollipop" />
   <project path="external/sepolicy" name="Evervolv/android_external_sepolicy" remote="github" revision="lollipop" />
@@ -548,7 +550,7 @@
   <project path="packages/apps/Settings" name="spezi77/android_packages_apps_Settings" remote="github" revision="pa-lp"  />
 
   <!-- Use custom toolchains -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="SaberMod/arm-eabi-4.9" remote="github" revision="master" />
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="SaberMod/arm-eabi-4.9" remote="github" revision="master" />-->
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="spezi77/arm-linux-androideabi-4.9" remote="github" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" />
