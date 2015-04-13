@@ -487,7 +487,6 @@
   <project path="system/media" name="CyanogenMod/android_system_media" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="cm" revision="cm-12.0" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" remote="cm" revision="cm-12.0" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
@@ -520,7 +519,8 @@
   <project path="system/netd" name="spezi77/android_system_netd" remote="github" revision="cm-12.0" groups="pdk" />
   <project path="bionic" name="spezi77/bionic" remote="github" revision="lollipop" groups="pdk" />
   <project path="bootable/recovery" name="spezi77/android_bootable_recovery" remote="github" revision="pa-lp" />
-
+  <project path="system/vold" name="spezi77/android_system_vold" remote="github" revision="cm-12.0" groups="pdk" />
+  
   <!-- Koush Superuser -->
   <project path="external/koush/Superuser" name="spezi77/Superuser" remote="github" revision="pa-lp" />
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-12.0" />
