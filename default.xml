@@ -547,7 +547,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" />
 
-  <!-- Use custom toolchains -->
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="SaberMod/arm-eabi-4.9" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="spezi77/arm-linux-androideabi-4.9" remote="github" revision="master" />-->
+  <!-- Use 4.7 toolchain for kernel 3.0 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" />
+  
 </manifest>
